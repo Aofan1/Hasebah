@@ -45,7 +45,8 @@
 }
     
 .pe{
-    font-size: 40px;   
+    font-size: 40px;
+   
     text-align: right;
     margin-top: 500px;
     margin-right: 50px;
@@ -122,8 +123,11 @@
             document.getElementById("inp").innerText= num*num2;
         else if ( am == '-')
             document.getElementById("inp").innerText= num-num2;
-        else if ( am == '+')
-            document.getElementById("inp").innerText= num+num2;
+        else if ( am == '+'){
+             asd = Number(num);
+            asd += Number(num2);
+            document.getElementById("inp").innerText= asd;
+        }
         else if ( am == '/')
             document.getElementById("inp").innerText= num/num2;
         
